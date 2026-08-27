@@ -1,0 +1,19 @@
+{
+  "name": "newdemo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "4.19.2",
+    "mongoose": "8.4.0",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
