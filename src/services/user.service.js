@@ -20,6 +20,7 @@ async function listUsers(filter = {}) {
 async function addCredits(id, amount) {
   const user = await getUserById(id);
   if (!user) throw new Error('User not found');
+  if (amount <= 0) throw new Error('Credit amount must be positive');
   user.credits += amount;
   await user.save();
   return user;
